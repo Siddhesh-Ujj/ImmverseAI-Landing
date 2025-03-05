@@ -31,7 +31,7 @@ const Experience = () => {
   ];
   return (
     <>
-      <div className="row text-white vrituality-row">
+      <div className="row text-white vrituality-row my-5">
         <div className="col-md-6 text-virtuality ">
           Awesome experiences with virtual reality world
         </div>
@@ -39,10 +39,15 @@ const Experience = () => {
           <img src={`virtuality.png`} className="virtual-image me-md-5 my-md-auto m-auto" />
         </div>
       </div>
-      <div className="container mt-4 ">
+      <div className="container mt-5 " style={{position:"relative"}}>
         <div className="row">
+          <div className="col-auto" style={{ position: "absolute", top: 0, left: -120 }}>
+            <img src="leftCircle.png" width={500} height={"auto"} />
+          </div>
+        </div>
+        <div className="row justify-content-center">
           {cardData.map((card) => (
-            <div key={card.id} className="px-5 py-3 col-sm-12 col-md-6 mb-4 ">
+            <div key={card.id} className="px-4 py-3 col-sm-12 col-md-5 mb-4 ">
               <div className="card position-relative">
                 <img
                   src={card?.image}

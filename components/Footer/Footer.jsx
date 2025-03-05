@@ -63,7 +63,7 @@ const Footer = () => {
                       />
                       <div>
                         <div className="username text-white">{item?.username}</div>
-                        <div className="email text-white">{item?.email}</div>
+                        <div className="email ">{item?.email}</div>
                       </div>
                     </div>
                   </div>

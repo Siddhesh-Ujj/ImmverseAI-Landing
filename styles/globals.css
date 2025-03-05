@@ -10,7 +10,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #09010E;
     --foreground: #ededed;
   }
 }
@@ -19,17 +19,18 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color:#09010E;
+  background-color: #09010E;
 
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background: var(--background); */
+  background-color: #09010E !important;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
 }
 
 * {
@@ -70,6 +71,21 @@ a {
   color: #fff;
 }
 
+.navbar-brand {
+  font-family: "IM FELL Great Primer SC", "sans-serif";
+  font-weight: 200px;
+  font-size: 23.35px;
+  line-height: 28.55px;
+  letter-spacing: 0%;
+  background-color: none;
+}
+
+ul>li {
+  font-family: "Inter", 'sans-serif';
+  font-size: 0.9rem;
+}
+
+
 .btn-primary {
   background-color: #e100ff;
   border: none;
@@ -77,4 +93,273 @@ a {
 
 .btn-primary:hover {
   background-color: #c000e0;
+}
+
+/* HeroSection */
+
+.hero-image-lefts img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Bottom Right Text */
+.hero-text-right {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.hero-img {
+  width: 20vw;
+  height: 25vw;
+  object-fit: cover;
+  clip-path: polygon(78% 1%,
+      100% 17%,
+      100% 60%,
+      100% 100%,
+      0 100%,
+      0% 60%,
+      0 0);
+}
+
+.hero-text {
+  font-family: "Orbitron", "sans-serif";
+  font-weight: 900;
+}
+
+.hero-para {
+  font-family: "Inter", "sans-serif";
+  color: #ffffffd9;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: -2%;
+}
+
+.get-button {
+  font-family: "Inter", "sans-serif";
+  font-size: 0.7rem;
+  width: 90px;
+  height: 35px;
+  border: 0px;
+  color: white;
+  border-radius: 3.34px;
+  background: linear-gradient(99.99deg,
+      #b936f5 -21.45%,
+      #c64c85 100%,
+      #f1005b 100%);
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 3px solid white;  */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.1);
+  /* Slight zoom on hover */
+}
+
+.online {
+  font-family: "Inter", "sans-serif";
+  font-size: 0.7rem;
+}
+
+.cinematic-img {
+  width: 100%;
+  padding: 0em;
+  margin: 0em;
+}
+
+.cinematic-part {
+  background-color: #534686;
+  width: 80%;
+  height: auto;
+  top: 290px;
+  left: 447px;
+  border-radius: 0px 0px 50% 50%;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+.cinematic-part>h3 {
+  font-family: "Orbitron", "sans-serif";
+  font-weight: 100;
+}
+
+.cinematic-text {
+  font-family: "Inter", "sans-serif";
+  width: 70%;
+  margin: auto;
+  z-index: -1;
+  padding: 0em;
+}
+
+.cinematic-div {
+  position: relative;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .hero-img {
+    width: 100%;
+    margin: 0.9rem 0;
+  }
+
+  .cinematic-part {
+    width: 100%;
+  }
+
+  .cinematic-text {
+    width: 100%;
+  }
+}
+
+/* footer */
+
+.client-text {
+  font-family: "Orbitron";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 23.6px;
+  letter-spacing: -2%;
+  color: white;
+}
+
+.customer-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  /* line-height: 3rem; */
+  letter-spacing: -2%;
+  width: 60%;
+  color: white;
+}
+
+.card-heading {
+  color: #f7b603 !important;
+}
+
+.card {
+  border: 0.76px solid !important;
+
+  border-image-source: linear-gradient(77.91deg,
+      rgba(185, 54, 245, 0.1375) 1.95%,
+      rgba(185, 54, 245, 0.11) 1.95%,
+      rgba(170, 20, 240, 0.0825) 108.82%) !important;
+
+  background: linear-gradient(180deg,
+      #aa14f0 -42.59%,
+      rgba(0, 0, 0, 0) -42.59%,
+      #cb8de8 -42.58%,
+      rgba(203, 143, 232, 0.18) 4.35%,
+      rgba(151, 60, 68, 0.055) 99.99%,
+      rgba(199, 137, 228, 0) 100%) !important;
+}
+
+.card-title {
+  font-family: "Inter";
+  color: white;
+}
+
+.card-text {
+  color: white;
+  height: 6rem;
+}
+
+.card-img {
+  width: 3.2rem !important;
+  height: 3.2rem;
+  clip-path: circle(50%);
+  aspect-ratio: 15/10;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username,
+.email {
+  font-family: "Inter";
+  font-size: 0.9rem;
+}
+
+ .email {
+  color: #EB4468 !important;
+}
+
+/* experience */
+
+.card-title {
+  font-family: "Inter";
+  color: white;
+}
+
+.card-experience {
+  color: white;
+  height: 7.5vw;
+  padding: 7px 5px;
+  background: #ffffff2e;
+  border-radius: 5px;
+  backdrop-filter: blur(20.697715759277344px);
+  width: 60%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 23vw;
+  object-fit: fill;
+}
+
+.card-experience-head {
+  text-decoration: underline;
+  font-family: 'Orbitron';
+}
+
+.card-experience-text {
+  font-family: 'Inter';
+  letter-spacing: -2%;
+  font-size: 0.9rem;
+}
+
+.vrituality-row {
+  background-color: #534686 !important;
+  padding: 1.5rem 0px;
+  border-top: 1px solid #fff;
+  clip-path: polygon(0 0, calc(100% - 80px) 0, 100% 80px, 100% 100%, 0 100%) !important;
+
+}
+
+.text-virtuality {
+  font-family: 'Orbitron';
+  font-size: 1.5rem;
+  padding: 3rem 5rem !important;
+}
+
+.virtual-image {
+  width: 35% !important;
+  height: 80% !important;
+  border-radius: 10%;
+}
+
+@media screen and (max-width:768px) {
+  .text-virtuality {
+    padding: 3rem "auto";
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .card-experience {
+    height: auto;
+  }
 }

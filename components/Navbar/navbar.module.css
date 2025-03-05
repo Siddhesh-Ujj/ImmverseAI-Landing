@@ -1,0 +1,19 @@
+.activeNav {
+  background: -webkit-linear-gradient(#C824EC, #DF308D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}   
+
+.activeNav::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  top: 50;
+  left: auto;
+  margin-left: 1.5vw;
+  position: absolute;
+  height: 5px;
+  border-radius: 5px;
+  background: #fff;
+}  
