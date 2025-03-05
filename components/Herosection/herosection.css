@@ -1,0 +1,149 @@
+.hero-image-lefts img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Bottom Right Text */
+.hero-text-right {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.hero-img {
+  width: 80%;
+  height: 23rem;
+  object-fit: cover;
+  clip-path: polygon(
+    78% 1%,
+    100% 17%,
+    100% 60%,
+    100% 100%,
+    0 100%,
+    0% 60%,
+    0 0
+  );
+}
+
+.hero-text {
+  font-family: "Orbitron", "sans-serif";
+  font-weight: 500;
+}
+
+.hero-para {
+  font-family: "Inter", "sans-serif";
+  color: #ffffffd9;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: -2%;
+}
+
+.get-button {
+  font-family: "Inter", "sans-serif";
+  font-size: 0.7rem;
+  width: 90px;
+  height: 35px;
+  border: 0px;
+  color: white;
+  border-radius: 3.34px;
+  background: linear-gradient(
+    99.99deg,
+    #b936f5 -21.45%,
+    #c64c85 100%,
+    #f1005b 100%
+  );
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 3px solid white;  */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.online {
+  font-family: "Inter", "sans-serif";
+  font-size: 0.7rem;
+}
+
+.cinematic-img {
+  width: 100%;
+  padding: 0em;
+  margin: 0em;
+  /* position: absolute;
+  isolation: isolate;
+ z-index: 9999;
+ top: -15%;
+ left: -%; */
+}
+
+/* .cinematic-img::before{
+    position: absolute;
+    color: white;
+    content:"Sandeep";
+    width: 100%;
+    top: 2%;
+    z-index: 9999;
+    border: 1px;
+} */
+
+.cinematic-part {
+  background-color: #534686;
+  width: 80%;
+  height: auto;
+  top: 290px;
+  left: 447px;
+  border-radius: 0px 0px 50% 50%;
+  margin: 0 auto;
+  /* clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%); */
+  /* clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%); */
+  z-index: -1;
+  /* clip-path: polygon(0 24%, 8% 8%, 21% 0, 79% 0, 95% 8%, 100% 28%, 100% 76%, 91% 93%, 75% 100%, 19% 100%, 4% 89%, 0 68%); */
+}
+
+.cinematic-part > h3{
+    font-family: "Orbitron","sans-serif";
+    font-weight: 100;
+}
+
+
+.cinematic-text{
+    font-family: "Inter","sans-serif";
+    width: 70%;
+    margin: auto;
+    z-index: -1;
+    padding: 0em;
+}
+
+
+
+.cinematic-div{
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .hero-img {
+    width: 100%;
+    margin: 0.9rem 0;
+  }
+  .cinematic-part{
+    width: 100%;
+  }
+  .cinematic-text{
+    width: 100%;
+  }
+}

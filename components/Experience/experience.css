@@ -1,0 +1,64 @@
+.card-title {
+  font-family: "Inter";
+  color: white;
+}
+
+.card-experience {
+  color: white;
+  height: 8rem;
+  padding: 7px 5px;
+  background: #ffffff2e;
+  border-radius: 5px;
+  backdrop-filter: blur(20.697715759277344px);
+  width: 65%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 18rem;
+  object-fit: fill;
+}
+
+.card-experience-head{
+    text-decoration: underline;
+    font-family: 'Orbitron';
+}
+
+.card-experience-text{
+    font-family: 'Inter';
+    letter-spacing: -2% ;
+    font-size: 0.9rem;
+}
+
+.vrituality-row{
+    background-color: #534686 !important;
+    padding: 1.5rem 0px;
+}
+
+.text-virtuality{
+    font-family: 'Orbitron';
+    font-size: 1.5rem;
+    padding: 3rem 5rem;
+}
+
+.virtual-image{
+    width: 35%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+@media screen  and (max-width:768px){
+    .text-virtuality{
+        padding: 3rem "auto";
+        margin: auto;
+        text-align: center;
+       
+    }
+ 
+}
+
+@media screen and (max-width:992px) {
+    .card-experience{
+        height: auto;
+    }
+}
